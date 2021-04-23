@@ -1,0 +1,55 @@
+html{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    position: relative;
+    background-color: darkslategray;
+}
+
+nav, footer{
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+div{
+    background-color: cornsilk;
+    border: 1px solid royalblue;
+}
+
+.banner{
+    height: 5rem;
+    min-height: 80vh;
+}
+
+.contact{
+    min-height: 40vh;
+}
+
+.container{
+    padding: 1rem;
+}
+
+.container-horizontal{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.container-vertical{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    align-content: space-evenly;
+    justify-content: center;
+}
+
+
+
