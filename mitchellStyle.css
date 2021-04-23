@@ -23,6 +23,10 @@ div{
     border: 1px solid royalblue;
 }
 
+a{
+    text-decoration: none;
+}
+
 .banner{
     height: 5rem;
     min-height: 80vh;
@@ -49,6 +53,37 @@ div{
     grid-gap: 1rem;
     align-content: space-evenly;
     justify-content: center;
+}
+
+
+.card-horizontal{
+    position:relative;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3fr; */
+    /* overflow: hidden; */
+    grid-gap: 1rem;
+}
+
+.card-horizontal:nth-child(even) img{
+    float: left;
+    box-shadow: -2rem 2rem 0px cornflowerblue;
+
+}
+.card-horizontal:nth-child(odd) img{
+    float: right;
+    box-shadow: 2rem 2rem 0px cornflowerblue;
+}
+
+.card-horizontal img{
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+    object-fit: scale-down;
+    align-self: center;
+    justify-self: center;
+    border-radius: .5rem;
+    margin: .5rem;
 }
 
 
