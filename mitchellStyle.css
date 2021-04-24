@@ -1,5 +1,22 @@
+@font-face {
+    font-family: "roboto";
+    src: url("./fonts/roboto-condensed.light.ttf");
+}
+
+@font-face {
+    font-family: "hendrickson";
+    src: url("./fonts/Hendrickson-K7GOD.otf");
+}
+
+@font-face {
+    font-family: "UImockup";
+    src: url("./fonts/UIMockup.ttf");
+}
+
+
 html{
     font-size: 20px;
+    font-family: roboto;
 }
 
 body{
@@ -122,12 +139,14 @@ h1,h2,h3{
 .brandname h1{
     margin: 0;
     color: cornflowerblue;
-    font-size: 5rem;
+    /* font-size: 10rem; */
+    font-family: hendrickson;
+    font-weight: 500;
 }
 
 .brandname>p{
     margin:0;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     color: cornsilk;
 }
 
@@ -145,23 +164,23 @@ h1,h2,h3{
         grid-template-columns: 1fr;
     }
 
-    .brandname h1{
-        font-size: 4rem;
+    /* .brandname h1{
+        font-size: 8rem;
     }
     
     .brandname>p{
         font-size: 2rem;
-    }
+    } */
 }
 
 @media (max-width: 400px) {
-    .brandname h1{
-        font-size: 3rem;
+    /* .brandname h1{
+        font-size: 6rem;
     }
     
     .brandname>p{
         font-size: 1rem;
-    }
+    } */
 }
 
 .contact{
@@ -174,9 +193,15 @@ h1,h2,h3{
 
 .container-horizontal{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     grid-gap: 1rem;
     justify-content: space-evenly;
+}
+
+@media (min-width: 650px) {
+    .container-horizontal{
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    }
 }
 
 .container-vertical{
@@ -318,4 +343,51 @@ h1,h2,h3{
 }
 .bg-neutral{
     background-color: whitesmoke;
+}
+
+.font-brand{
+    font-family: hendrickson;
+    font-weight: 500;
+}
+
+.font-xxl{
+    font-size: 15rem;
+}
+
+.font-xl{
+    font-size: 10rem;
+}
+
+.font-lg{
+    font-size: 7rem;
+}
+
+.font-md{
+    font-size: 2rem;
+}
+
+.font-sm{
+    font-size: 1rem;
+}
+
+@media (max-width: 750px){
+    .font-xxl{
+        font-size: 10rem;
+    }
+    
+    .font-xl{
+        font-size: 7rem;
+    }
+    
+    .font-lg{
+        font-size: 5rem;
+    }
+    
+    .font-md{
+        font-size: 1.6rem;
+    }
+    
+    .font-sm{
+        font-size: .8rem;
+    }
 }
