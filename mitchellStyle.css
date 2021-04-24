@@ -166,6 +166,10 @@ h1,h2,h3{
     padding: 1rem;
 }
 
+.margin-vertical{
+    margin: 1rem 0rem;
+}
+
 .container-horizontal{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
