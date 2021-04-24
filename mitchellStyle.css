@@ -29,7 +29,7 @@ header{
 
 nav, footer{
     text-align: center;
-    background-color: cornflowerblue;
+    background-color:rgb(125, 176, 228);
     font-size: 1.1rem;
 }
 
@@ -94,7 +94,7 @@ a{
 
 i{
     font-size: 5rem;
-    color:cornflowerblue;
+    color:rgb(125, 176, 228);
     /* padding: 1rem; */
     border-radius: .3rem;
     /* transition-property: background-color, color;
@@ -121,7 +121,7 @@ h1,h2,h3{
     align-content: center;
     justify-items: center;
     padding: 1.5rem;
-    background-image: linear-gradient(294deg, white -56%, transparent 76%);
+    background-image: linear-gradient(294deg, white -5%, transparent 84%)
 }
 
 .banner-bg{
@@ -136,9 +136,13 @@ h1,h2,h3{
     filter: grayscale(1) brightness(.7);
 }
 
+.brandname{
+    position:relative;
+}
+
 .brandname h1{
     margin: 0;
-    color: cornflowerblue;
+    color: rgb(125, 176, 228);
     /* font-size: 10rem; */
     font-family: hendrickson;
     font-weight: 500;
@@ -148,6 +152,16 @@ h1,h2,h3{
     margin:0;
     /* font-size: 2rem; */
     color: cornsilk;
+    position: absolute;
+    right: 2rem;
+    bottom: 3rem;
+}
+
+@media (max-width:750px) {
+    .brandname>p{
+        right: 1.5rem;
+        bottom: 2rem;
+    }
 }
 
 .brandname p>span{
@@ -157,6 +171,10 @@ h1,h2,h3{
 
 .banner p{
     text-align: end;
+}
+
+.banner>div{
+    align-self: flex-end;
 }
 
 @media (max-width: 750px) {
@@ -217,9 +235,9 @@ h1,h2,h3{
     text-align: center;
 }
 
-.title{
+/* .title{
     color: cornflowerblue;
-}
+} */
 
 .card{
     margin: .5rem;
@@ -286,10 +304,10 @@ h1,h2,h3{
 
 @media (min-width: 850px) {
     .card-horizontal:nth-child(even) img{
-        box-shadow: -2rem 2rem 0px cornflowerblue;
+        box-shadow: -2rem 2rem 0px rgb(125, 176, 228);
     }
     .card-horizontal:nth-child(odd) img{
-        box-shadow: 2rem 2rem 0px cornflowerblue;
+        box-shadow: 2rem 2rem 0px rgb(125, 176, 228);
     }
 }
 
@@ -298,26 +316,29 @@ h1,h2,h3{
 } */
 
 .button-main{
-    background-color: cornflowerblue;
+    background-color: rgb(125, 176, 228);
     color: cornsilk;
     border-radius: .2rem;
     padding: .3rem 1.5rem;
-    transition-property: background-color, color;
-    transition-duration: .5s;
+    transition-property: box-shadow, color, background-color;
+    transition-duration: 1s;
 }
 
 .button-sub{
     color: cornflowerblue;
     border-radius: .2rem;
     padding: .3rem 1.5rem;
-    transition-property: background-color, color;
-    transition-duration: .5s;
+    transition-property: box-shadow, color, background-color;
+    transition-duration: 1s;
 }
 
 .button-sub:hover,
 .button-main:hover{
-    background-color: black;
-    color: cornsilk;
+    /* background-color: black;
+    color: cornsilk; */
+    background-color: transparent;
+    color: rgb(125, 176, 228);
+    box-shadow: black 0px 8px 15px
 }
 
 .margin-vertical{
@@ -368,6 +389,22 @@ h1,h2,h3{
 
 .font-sm{
     font-size: 1rem;
+}
+
+.shadow-light{
+    text-shadow: 0 0 40px white;
+}
+
+.shadow-light-short{
+    text-shadow: 0 0 5px white;
+}
+
+.shadow-dark{
+    text-shadow: 0 0 40px black;
+}
+
+.shadow-dark-short{
+    text-shadow: 0 0 5px black;
 }
 
 @media (max-width: 750px){
