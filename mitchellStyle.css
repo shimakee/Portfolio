@@ -55,6 +55,14 @@ a{
     justify-content: center;
 }
 
+.center-self{
+    justify-self: center;
+}
+
+.title{
+    color: cornflowerblue;
+}
+
 
 .card-horizontal{
     position:relative;
@@ -69,14 +77,20 @@ a{
     box-shadow: -2rem 2rem 0px cornflowerblue;
 
 }
+.card-horizontal:nth-child(even) a{
+    float: left;
+}
 .card-horizontal:nth-child(odd) img{
     float: right;
     box-shadow: 2rem 2rem 0px cornflowerblue;
 }
+.card-horizontal:nth-child(odd) a{
+    float: right;
+}
 
 .card-horizontal img{
-    min-width: 100px;
-    max-width: 200px;
+    min-width: 200px;
+    max-width: 300px;
     min-height: 100px;
     max-height: 200px;
     object-fit: scale-down;
@@ -86,5 +100,20 @@ a{
     margin: .5rem;
 }
 
+.button-main, .button-sub{
+    margin: .3rem;
+}
 
+.button-main{
+    background-color: cornflowerblue;
+    color: cornsilk;
+    border-radius: .2rem;
+    padding: .5rem;
+}
+
+.button-sub{
+    color: cornflowerblue;
+    border-radius: .2rem;
+    padding: .5rem;
+}
 
