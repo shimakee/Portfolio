@@ -28,7 +28,6 @@ a{
 
 .banner{
     position: relative;
-    height: 5rem;
     min-height: 80vh;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -41,6 +40,7 @@ a{
 .banner-bg{
     position:absolute;
     z-index: -10;
+    top: 0;
     width: 100%;
     height: 100%;
     background-image: url(https://picsum.photos/1920/1080);
@@ -68,6 +68,30 @@ a{
 
 .banner p{
     text-align: end;
+}
+
+@media (max-width: 750px) {
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    .brandname h1{
+        font-size: 4rem;
+    }
+    
+    .brandname>p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .brandname h1{
+        font-size: 3rem;
+    }
+    
+    .brandname>p{
+        font-size: 1rem;
+    }
 }
 
 .contact{
