@@ -42,12 +42,23 @@ nav{
 
 footer{
     padding: .5rem;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
 }
 
 footer p{
     margin: 0;
     font-size: 16px;
-    color: blanchedalmond;
+    color: whitesmoke;
+}
+
+footer i{
+    color: whitesmoke;
+}
+
+footer a{
+    padding: 0 1.5rem;
 }
 
 i.navicon{
