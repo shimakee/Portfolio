@@ -13,13 +13,13 @@
         <nav>
             <i class="navicon font-icon font-md">]</i>
             <div class="dropdown">
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
-        <div class="banner">
+        <div id="about" class="banner">
             <div class="banner-bg"></div>
             <a href="#" class="brandname">
                 <h1 class="title font-xxl shadow-dark-short">Mitchell</h1>
@@ -27,12 +27,12 @@
             </a>
             <div>
                 <p>I am a creative developer passionate about learning various technologies, their diverse applications, and building useful software.</p>
-                <a href="#" class="button-main">Contact</a>
+                <a href="#contact" class="button-main">Contact</a>
             </div>
         </div>
     </header>
     <div>
-        <div class="container-vertical margin-vertical padding-vertical">
+        <div id="skills" class="container-vertical margin-vertical padding-vertical">
             <h1 class="title center-self font-brand font-lg">Skills</h1>
             <div class="container-horizontal container">
                 <div class="container-vertical container card">
@@ -76,6 +76,7 @@
                         <li>VueJS</li>
                         <li>Express</li>
                         <li>EF</li>
+                        <li>Unity</li>
                     </ul>
                 </div>
                 <div class="container-vertical container card">
@@ -101,7 +102,7 @@
             </div>
         </div>
 
-        <div class="margin-vertical bg-neutral padding-vertical">
+        <div id="projects" class="margin-vertical bg-neutral padding-vertical">
             <div class="container-vertical padding-horizontal">
 
                 <h1 class="center-self title font-brand font-lg">Projects</h1>
@@ -109,50 +110,47 @@
                     <div class="card-horizontal">
                         <img src="https://picsum.photos/500/300" />
                         <div>
-                            <h2 class="shadow-dark">Title</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore sit nihil commodi dolorum nesciunt iure autem ratione cumque. Dolorum voluptates facere eveniet ipsam totam, consectetur blanditiis nemo commodi. Iste.</p>
-                            <a href="#" class="button-sub">Live link</a>
-                            <a href="#" class="button-main">Github</a>
+                            <h2>Cafe Leonida</h2>
+                            <p>This project is a simple static website for a mock restaurant using HTML and CSS.</p>
+                            <a href="https://cafeleonida.com/" target="_blank" class="button-sub">Live link</a>
+                            <a href="https://github.com/shimakee/Cafe-Leonida" target="_blank" class="button-main">Github</a>
                         </div>
                     </div>
                     <div class="card-horizontal">
                         <img src="https://picsum.photos/500/300" />
                         <div>
-                            <h2 class="shadow-dark">Title</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore sit nihil commodi dolorum nesciunt iure autem ratione cumque. Dolorum voluptates facere eveniet ipsam totam, consectetur blanditiis nemo commodi. Iste.</p>
-                            <a href="#" class="button-sub">Live link</a>
-                            <a href="#" class="button-main">Github</a>
+                            <h2>Kristof Phonics</h2>
+                            <p>This project was a mobile game made for me to learn Unity using C#, and to use the application as a learning tool to help my son to read using phonics.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.Candycodes.Kristofphonics&hl=en_US&gl=US" target="_blank" class="button-sub">Live link</a>
+                            <a href="https://github.com/shimakee/Mobile-Practise" target="_blank" class="button-main">Github</a>
                         </div>
                     </div>
                     <div class="card-horizontal">
                         <img src="https://picsum.photos/500/300" />
                         <div>
-                            <h2 class="shadow-dark">Title</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore sit nihil commodi dolorum nesciunt iure autem ratione cumque. Dolorum voluptates facere eveniet ipsam totam, consectetur blanditiis nemo commodi. Iste.</p>
-                            <a href="#" class="button-sub">Live link</a>
-                            <a href="#" class="button-main">Github</a>
+                            <h2>WPF hotel booking app</h2>
+                            <p>This project was a sample of a hotel booking application built to for me learn how to develop WPF desktop application using C#, EF with SQL for persistence.</p>
+                            <!-- <a href="#" class="button-sub">Live link</a> -->
+                            <a href="https://github.com/shimakee/Hotel-booking-system" target="_blank" class="button-main">Github</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container container-vertical margin-vertical padding-vertical">
+        <div id="contact" class="container container-vertical margin-vertical padding-vertical">
             <div class="center-self">
-                <i class="font-icon center-self">)</i>
+                <i class="fas fa-phone center-self font-md"></i>
                 <h3 class="center-self title">Contact</h3>
             </div>
             <ul class="center-self no-decoration no-padding">
-                <li>0123-4567-8910</li>
-                <li>email@email.com</li>
-                <li>fith st. main ave.</li>
-                <li>Somewhere, SW 12345</li>
-                <li>Country</li>
+                <li>kenneth@mitchelldeleon.com</li>
+                <li>Philippines</li>
             </ul>
-            <a class="button-main center-self">Send email</a>
+            <a class="button-main center-self" href="mailto:kenneth@mitchelldeleon.com">Send email</a>
         </div>
     </div>
     <footer>
-        <p>&copy; Copyright 2021 Name</p>
+        <p>&copy; Copyright 2021 Mitchell De Leon</p>
     </footer>
 </body>
 </html>
