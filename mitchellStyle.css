@@ -27,6 +27,27 @@ a{
     text-decoration: none;
 }
 
+i{
+    font-size: 5rem;
+    color:cornflowerblue;
+    /* padding: 1rem; */
+    border-radius: .3rem;
+    /* transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+}
+
+/* i:hover{
+    color: cornsilk;
+    background-color: cornflowerblue;
+
+} */
+
+h1,h2,h3{
+    padding: 0;
+    margin:0;
+}
+
 .banner{
     height: 5rem;
     min-height: 80vh;
@@ -50,19 +71,29 @@ a{
 .container-vertical{
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    /* grid-gap: 1rem; */
     align-content: space-evenly;
     justify-content: center;
 }
 
 .center-self{
     justify-self: center;
+    text-align: center;
 }
 
 .title{
     color: cornflowerblue;
 }
 
+.card{
+    margin: .5rem;
+    padding: .2rem;
+}
+
+.card ul, .card ol{
+    padding: 0;
+    list-style: none;
+}
 
 .card-horizontal{
     position:relative;
@@ -116,4 +147,6 @@ a{
     border-radius: .2rem;
     padding: .5rem;
 }
+
+
 
