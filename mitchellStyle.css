@@ -30,6 +30,7 @@ footer{
 footer p{
     margin: 0;
     font-size: 16px;
+    color: blanchedalmond;
 }
 
 i.navicon{
@@ -68,10 +69,6 @@ nav a{
 
 nav a:hover{
     background-color: black;
-}
-
-div{
-    border: 1px solid royalblue;
 }
 
 a{
@@ -176,7 +173,7 @@ h1,h2,h3{
 }
 
 .margin-vertical{
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
 }
 
 .container-horizontal{
@@ -302,7 +299,12 @@ h1,h2,h3{
     color: cornsilk;
 }
 
+.no-decoration{
+    list-style: none;
+    text-decoration: none;
+}
 
-
-
+.no-padding{
+    padding: 0;
+}
 
