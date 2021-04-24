@@ -82,10 +82,14 @@ nav a{
     /* margin: 0px 1rem; */
     padding: .5rem 1rem 0px 1rem;
     border-radius: .2rem;
+    transition-property: box-shadow, color, background-color;
+    transition-duration: 1s;
 }
 
 nav a:hover{
-    background-color: black;
+    /* background-color: rgb(125, 176, 228);
+    color: rgb(125, 176, 228); */
+    box-shadow: black 0px 8px 15px
 }
 
 a{
@@ -336,7 +340,7 @@ h1,h2,h3{
 .button-main:hover{
     /* background-color: black;
     color: cornsilk; */
-    background-color: transparent;
+    background-color: whitesmoke;
     color: rgb(125, 176, 228);
     box-shadow: black 0px 8px 15px
 }
