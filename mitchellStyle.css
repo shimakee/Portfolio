@@ -172,10 +172,6 @@ h1,h2,h3{
     padding: 1rem;
 }
 
-.margin-vertical{
-    margin: 2rem 0rem;
-}
-
 .container-horizontal{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
@@ -299,12 +295,27 @@ h1,h2,h3{
     color: cornsilk;
 }
 
-.no-decoration{
-    list-style: none;
-    text-decoration: none;
+.margin-vertical{
+    margin: 2rem 0rem;
+}
+
+.padding-vertical{
+    padding: 2rem 0rem;
+}
+
+.padding-horizontal{
+    padding: 0rem 2rem;
 }
 
 .no-padding{
     padding: 0;
 }
 
+.no-decoration{
+    list-style: none;
+    text-decoration: none;
+
+}
+.bg-neutral{
+    background-color: whitesmoke;
+}
