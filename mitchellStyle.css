@@ -8,7 +8,6 @@ body{
 
 header{
     position: relative;
-    background-color: darkslategray;
 }
 
 nav, footer{
@@ -18,10 +17,10 @@ nav, footer{
     font-size: 1.1rem;
 }
 
-div{
+/* div{
     background-color: cornsilk;
     border: 1px solid royalblue;
-}
+} */
 
 a{
     text-decoration: none;
@@ -49,8 +48,47 @@ h1,h2,h3{
 }
 
 .banner{
+    position: relative;
     height: 5rem;
     min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-content: center;
+    justify-items: center;
+    padding: 1.5rem;
+    background-image: linear-gradient(294deg, white -56%, transparent 76%);
+}
+
+.banner-bg{
+    position:absolute;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/1920/1080);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1) brightness(.7);
+}
+
+.brandname h1{
+    margin: 0;
+    color: cornflowerblue;
+    font-size: 5rem;
+}
+
+.brandname>p{
+    margin:0;
+    font-size: 2rem;
+    color: cornsilk;
+}
+
+.brandname p>span{
+    margin:0;
+    color:black;
+}
+
+.banner p{
+    text-align: end;
 }
 
 .contact{
@@ -131,15 +169,15 @@ h1,h2,h3{
     margin: .5rem;
 }
 
-.button-main, .button-sub{
+/* .button-main, .button-sub{
     margin: .3rem;
-}
+} */
 
 .button-main{
     background-color: cornflowerblue;
     color: cornsilk;
     border-radius: .2rem;
-    padding: .5rem;
+    padding: .3rem 1.5rem;
 }
 
 .button-sub{
