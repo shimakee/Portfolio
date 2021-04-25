@@ -1,22 +1,11 @@
 @font-face {
-    font-family: "roboto";
-    src: url("./fonts/roboto-condensed.light.ttf");
+    font-family: "Liebra";
+    src: url("./fonts/Leibra.ttf");
 }
-
-@font-face {
-    font-family: "hendrickson";
-    src: url("./fonts/Hendrickson-K7GOD.otf");
-}
-
-@font-face {
-    font-family: "UImockup";
-    src: url("./fonts/UIMockup.ttf");
-}
-
 
 html{
     font-size: 20px;
-    font-family: roboto;
+    font-family: 'Roboto Condensed';
 }
 
 body{
@@ -159,7 +148,7 @@ h1,h2,h3{
     margin: 0;
     color: rgb(125, 176, 228);
     /* font-size: 10rem; */
-    font-family: hendrickson;
+    font-family: Liebra;
     font-weight: 500;
 }
 
@@ -168,14 +157,14 @@ h1,h2,h3{
     /* font-size: 2rem; */
     color: cornsilk;
     position: absolute;
-    right: 2rem;
-    bottom: 3rem;
+    right: 0rem;
+    bottom: 6rem;
 }
 
 @media (max-width:750px) {
     .brandname>p{
-        right: 1.5rem;
-        bottom: 2rem;
+        right: 0rem;
+        bottom: 3rem;
     }
 }
 
@@ -388,7 +377,7 @@ h1,h2,h3{
 }
 
 .font-brand{
-    font-family: hendrickson;
+    font-family: Liebra;
     font-weight: 500;
 }
 
@@ -397,15 +386,15 @@ h1,h2,h3{
 }
 
 .font-xxl{
-    font-size: 15rem;
+    font-size: 12rem;
 }
 
 .font-xl{
-    font-size: 10rem;
+    font-size: 8rem;
 }
 
 .font-lg{
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .font-md{
@@ -434,22 +423,22 @@ h1,h2,h3{
 
 @media (max-width: 750px){
     .font-xxl{
-        font-size: 10rem;
+        font-size: 8rem;
     }
     
     .font-xl{
-        font-size: 7rem;
-    }
-    
-    .font-lg{
         font-size: 5rem;
     }
     
+    .font-lg{
+        font-size: 3rem;
+    }
+    
     .font-md{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     
     .font-sm{
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
